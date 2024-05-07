@@ -1,0 +1,27 @@
+{
+    "name": "qf/utils",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "qf\\utils\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "require": {
+        "topthink/framework": "^6"
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "qf\\utils\\service\\BaseService"
+            ],
+            "config": {
+                "utils": "./config/utils.php"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
